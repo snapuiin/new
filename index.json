@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Glow Button",
+    "category": "Buttons",
+    "raw": "https://raw.githubusercontent.com/snapuiin/snapui-buttons/main/glow-button.html",
+    "repo": "https://github.com/snapuiin/snapui-buttons"
+  },
+  {
+    "title": "Frosted Card",
+    "category": "Cards",
+    "raw": "https://raw.githubusercontent.com/snapuiin/snapui-cards/main/frosted-card.html",
+    "repo": "https://github.com/snapuiin/snapui-cards"
+  }
+]
