@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrustBuddy Scam Reports</title>
+<style>:root {
+  --bg: #f8f9fa;
+  --text: #333;
+  --card: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --header: #202124;
+  --footer: #ddd;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1e1e1e;
+  --shadow: rgba(255, 255, 255, 0.05);
+  --header: #181818;
+  --footer: #222;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.content-outer,
+.main-inner,
+.region-inner,
+.tabs-inner,
+.section,
+.widget,
+.content,
+.content-inner,
+.main {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.sidebar,
+.sidebar-container,
+.widget-content {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+}
+
+header {
+  background: var(--header);
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.header-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+input#search {
+    padding: 0.7rem 1rem !important;
+    width: 90% !important;
+    max-width: 500px !important;
+    border-radius: 8px !important;
+    border: 2px solid #ddd !important;
+    font-size: 16px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    outline: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+/* Search input styles with maximum specificity */
+body input#search,
+.header-actions input#search,
+#search {
+    padding: 0.7rem 1rem !important;
+    width: 90% !important;
+    max-width: 500px !important;
+    border-radius: 8px !important;
+    border: 2px solid #ddd !important;
+    font-size: 16px !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    outline: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+    caret-color: #000000 !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 1000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    -webkit-opacity: 1 !important;
+    -webkit-text-size-adjust: 100% !important;
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 768px) {
+    body input#search,
+    .header-actions input#search,
+    #search {
+        -webkit-text-fill-color: #000000 !important;
+        opacity: 1 !important;
+        color: #000000 !important;
+        font-size: 16px !important;
+        -webkit-user-modify: read-write !important;
+        -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    }
+}
+
+/* Dark mode overrides with higher specificity */
+body.dark input#search,
+.dark .header-actions input#search,
+.dark #search {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+
+#toggle-dark {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#toggle-dark:hover {
+  background: #555;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 2rem 0; /* Adjusted padding */
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px var(--shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  background: var(--footer);
+  padding: 1rem;
+  color: #444;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Dark mode specific styles */
+body.dark input#search {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border-color: #444 !important;
+}
+
+/* Placeholder styles with higher specificity */
+input#search::placeholder {
+    color: #666666 !important;
+    opacity: 1 !important;
+}
+
+body.dark input#search::placeholder {
+    color: #999999 !important;
+}
+
+/* Focus styles */
+input#search:focus {
+    border-color: #4a90e2 !important;
+    box-shadow: 0 0 0 2px rgba(74,144,226,0.2) !important;
+}
+
+/* Override any Blogger default styles */
+.header-actions input[type="text"] {
+    font-family: inherit !important;
+    font-size: 16px !important;
+    line-height: normal !important;
+}
+
+/* Autocomplete styles */
+#search:-webkit-autofill,
+#search:-webkit-autofill:hover,
+#search:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--bg) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>🚨 TrustBuddy Scam Reports</h1>
+    <div class="header-actions">
+      <input 
+        type="text" 
+        id="search" 
+        placeholder="Search scams..." 
+        autocomplete="off"
+        spellcheck="false"
+        dir="auto"
+      >
+      <button id="toggle-dark">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main id="scam-list"></main>
+
+  <footer>
+    <p>Built with ❤️ by TrustBuddy</p>
+  </footer>
+
+  <script >const API_URL = 'https://api.github.com/repos/trustbuddy/trustbuddy/issues';
+const scamList = document.getElementById('scam-list');
+const searchInput = document.getElementById('search');
+const toggleDark = document.getElementById('toggle-dark');
+
+async function fetchScams() {
+  const res = await fetch(API_URL);
+  const data = await res.json();
+  displayScams(data);
+}
+
+function displayScams(issues) {
+  scamList.innerHTML = '';
+  issues.forEach(issue => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <h2>${issue.title}</h2>
+      <p>${issue.body.substring(0, 150)}...</p>
+      <p><strong>By:</strong> ${issue.user.login}</p>
+      <a href="${issue.html_url}" target="_blank">🔗 View Full Report</a>
+    `;
+    scamList.appendChild(card);
+  });
+}
+
+searchInput.addEventListener('input', e => {
+  const value = e.target.value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    const isVisible = card.innerText.toLowerCase().includes(value);
+    card.style.display = isVisible ? 'block' : 'none';
+  });
+});
+
+// Dark Mode Toggle
+toggleDark.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  toggleDark.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
+
+fetchScams();
+</script>
+</body>
+</html>
